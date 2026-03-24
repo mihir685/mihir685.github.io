@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mihir Kumar — Portfolio</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <div class="technical-bg"></div>
+
+<header id="main-header">
+  <a href="#home" class="logo">Mihir Kumar</a>
+
+  <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+  </button>
+
+  <nav class="main-nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <i class="fa-solid fa-circle-half-stroke"></i>
+  </button>
+</header>
+
+<section id="home" class="home reveal">
+  <div class="home-img">
+    <img src="images/main.webp" alt="Mihir's Photo" />
+  </div>
+
+  <div class="home-content">
+    <h1>Hi, I'm <span>Mihir</span></h1>
+    <h3 class="typing-text"><span class="role">UI-Friendly Frontend Coder</span></h3>
+    <p class="home-lead">Building high-performance, modern web experiences with a focus on precision and design.</p>
+
+    <div class="cta-group">
+      <button type="button" class="resume-btn" id="openResumeModal">
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="home reveal">
+  <div class="home-content" style="max-width:1000px;">
+    <h1 style="text-align:left;"><span>About Me</span></h1>
+    <div class="about-grid">
+      <div class="about-text glass-panel">
+        <p>I am a freelance web developer and UI/UX designer currently pursuing my Bachelor of Computer Applications at The Maharaja Sayajirao University of Baroda.</p>
+        <p>My passion lies in crafting premium, modern web aesthetics—specializing in glassmorphism, industrial themes, and high-end digital experiences. Whether it's designing a sleek interface or engineering a robust backend, I focus on delivering quality and performance.</p>
+        <div class="about-stats">
+          <div class="stat-box"><h3>2+</h3><p>Years Coding</p></div>
+          <div class="stat-box"><h3>10+</h3><p>Projects Built</p></div>
+          <div class="stat-box"><h3>100%</h3><p>Commitment</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills-section reveal">
+  <h1>My Skills</h1>
+  <p style="font-size:1.8rem; margin-bottom: 3rem; color: #aaa;">Categorized for clarity and expertise.</p>
+
+  <h2 class="skill-category-title">Frontend &amp; UI/UX</h2>
+  <div class="skills-container">
+    <div class="skill-card"><img src="images/HTML.webp" alt="HTML"><div class="skill-name">HTML</div></div>
+    <div class="skill-card"><img src="images/CSS.webp" alt="CSS"><div class="skill-name">CSS</div></div>
+    <div class="skill-card"><img src="images/Javascript.webp" alt="JavaScript"><div class="skill-name">JavaScript</div></div>
+  </div>
+
+  <h2 class="skill-category-title">Backend &amp; Core</h2>
+  <div class="skills-container">
+    <div class="skill-card"><img src="images/C.webp" alt="C"><div class="skill-name">C</div></div>
+    <div class="skill-card"><img src="images/CSharp.webp" alt="C#"><div class="skill-name">C#</div></div>
+    <div class="skill-card"><img src="images/CPP.webp" alt="C++"><div class="skill-name">C++</div></div>
+    <div class="skill-card"><img src="images/Python.webp" alt="Python"><div class="skill-name">Python</div></div>
+    <div class="skill-card"><img src="images/PHP.webp" alt="PHP"><div class="skill-name">PHP</div></div>
+    <div class="skill-card"><img src="images/MYSQL.webp" alt="MySQL"><div class="skill-name">MySQL</div></div>
+    <div class="skill-card"><img src="images/dsa.webp" alt="DSA"><div class="skill-name">Data Structures</div></div>
+  </div>
+
+  <h2 class="skill-category-title">Security &amp; Tools</h2>
+  <div class="skills-container">
+    <div class="skill-card"><img src="images/Cybersecurity.webp" alt="Cybersecurity"><div class="skill-name">Cybersecurity</div></div>
+    <div class="skill-card"><img src="images/cns.webp" alt="Cryptography"><div class="skill-name">Cryptography</div></div>
+    <div class="skill-card"><img src="images/cl.webp" alt="Cyber Law"><div class="skill-name">Cyber Law</div></div>
+    <div class="skill-card"><img src="images/se.webp" alt="Software Engineering"><div class="skill-name">Software Eng.</div></div>
+    <div class="skill-card"><img src="images/dm.webp" alt="Digital Marketing"><div class="skill-name">Digital Marketing</div></div>
+    <div class="skill-card"><img src="images/xml.webp" alt="XML"><div class="skill-name">XML</div></div>
+  </div>
+</section>
+
+<section id="education" class="home reveal">
+  <div class="home-content" style="max-width:1100px;">
+    <h1 style="text-align:left;"><span>My Education</span></h1>
+
+    <div class="image-container glass-panel" style="margin-top:2rem; padding: 2rem;">
+      <img src="images/msu.webp" alt="MSU" style="width:100%; height:auto; display:block; border-radius: 8px;">
+      <div class="image-text edu-fixed-white" style="margin-top: 1.5rem;">
+        <h2>The Maharaja Sayajirao University of Baroda</h2>
+        <p style="font-size: 1.8rem; color: #ccc;">Bachelor of Computer Applications (BCA)</p>
+        <p style="font-size: 1.6rem; color: #b74b4b;">Vadodara, Gujarat (2023 – 2027)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="home reveal">
+  <div class="home-content" style="max-width:1000px; text-align:center;">
+    <h1><span>Projects</span></h1>
+    <p style="font-size:1.8rem; margin-bottom: 3rem; color: #aaa;">A showcase of my recent technical endeavors.</p>
+
+    <div class="projects-grid">
+      <div class="project-card glass-panel">
+        <h2>RunningMan – System Activity App</h2>
+        <p>A lightweight Windows desktop application inspired by RunCat. The character runs faster as CPU usage increases, giving a fun real-time visual indication of system performance.</p>
+        <ul style="text-align:left; display:inline-block; margin-top:1.2rem;">
+          <li>Built using C# (.NET)</li>
+          <li>Real-time CPU usage monitoring</li>
+          <li>Optimized for Windows 10/11</li>
+        </ul>
+        <div class="project-links" style="margin-top:2rem;">
+          <a href="https://github.com/mihir685/run-man-tray" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank"><i class="fa-solid fa-download"></i> Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="home reveal">
+  <div class="home-content" style="max-width:1100px;">
+    <h1 style="text-align:left;"><span>Services</span></h1>
+    <p style="font-size:1.9rem; margin:1.2rem 0 2rem; color:inherit;">I offer development, security and app solutions — contact me for a custom quote.</p>
+
+    <div class="services-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.6rem;">
+      <div class="service-card glass-panel"><h3>Full-Stack Web Development</h3><p>Responsive websites &amp; web apps (HTML/CSS/JS + PHP/.NET + MySQL).</p></div>
+      <div class="service-card glass-panel"><h3>C# .NET Desktop Apps</h3><p>WinForms / WPF apps — utilities, tools, and business apps.</p></div>
+      <div class="service-card glass-panel"><h3>Browser Extensions</h3><p>Custom Chrome extensions (productivity, audio control, helpers).</p></div>
+      <div class="service-card glass-panel"><h3>Cybersecurity Basics</h3><p>Site audit, secure config advice and vulnerability checklist.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT SECTION ===================== -->
+<section id="contact" class="home reveal">
+  <div class="home-content contact-container" style="width: 100%; max-width: 1100px; display: flex; gap: 4rem; flex-wrap: wrap; align-items: flex-start;">
+
+    <!-- Contact Info -->
+    <div class="contact-info" style="flex: 1; min-width: 280px;">
+      <h1 style="text-align:left;"><span>Get in Touch</span></h1>
+      <p style="font-size:1.8rem; margin-top:2rem; line-height:1.6; color: #ccc;">
+        Ready to start your next project or need a technical consultation? Let's connect.
+      </p>
+      <div class="contact-links" style="margin-top: 3rem; font-size: 2rem;">
+        <p style="margin-bottom: 1.5rem;">📧 <a href="mailto:mihir6815@gmail.com" style="color:#b74b4b; text-decoration: none;">mihir6815@gmail.com</a></p>
+        <p style="margin-bottom: 1.5rem;">📱 <a href="tel:+918734975135" style="color:#b74b4b; text-decoration: none;">+91 87349 75135</a></p>
+        <p style="margin-bottom: 1.5rem;">💬 <a href="https://wa.me/918734975135" target="_blank" style="color:#b74b4b; text-decoration: none;">WhatsApp Me</a></p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-wrapper glass-panel" style="flex: 1.2; min-width: 300px;">
+      <h2 style="font-size:2.8rem; margin-bottom:2.5rem; color:white;">Send a Message</h2>
+
+      <form id="contactForm" novalidate>
+
+        <div class="cf-group">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" name="from_name" placeholder="Mihir Parmar" autocomplete="name" />
+          <span class="cf-error" id="err-name"></span>
+        </div>
+
+        <div class="cf-group">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" name="from_email" placeholder="you@example.com" autocomplete="email" />
+          <span class="cf-error" id="err-email"></span>
+        </div>
+
+        <div class="cf-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="Project Inquiry / Collaboration" />
+          <span class="cf-error" id="err-subject"></span>
+        </div>
+
+        <div class="cf-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project…"></textarea>
+          <span class="cf-error" id="err-message"></span>
+        </div>
+
+        <button type="submit" class="cf-submit-btn" id="cf-submit">
+          <span id="cf-btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+          <span id="cf-btn-loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending…</span>
+        </button>
+
+        <!-- Success / Error toast -->
+        <div id="cf-toast" class="cf-toast" style="display:none;"></div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+<!-- ===================== END CONTACT ===================== -->
+
+<div class="page-social reveal">
+  <a href="https://www.linkedin.com/in/mihir685" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://twitter.com/mihir_685" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://github.com/mihir685" target="_blank"><i class="fa-brands fa-github"></i></a>
+  <a href="https://wa.me/918734975135" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<footer class="footer">
+  <p>© 2025 <span style="color:#b74b4b;">Mihir Parmar</span>. All Rights Reserved.</p>
+</footer>
+
+<div class="resume-modal" id="resumeModal">
+  <div class="resume-modal-content glass-panel">
+    <h2>Select Resume</h2>
+    
+    <a href="resume/Mihirkumar Parmar BCA.pdf" download class="resume-option">Web Development</a>
+    
+    <a href="resume/Mihirkumar Parmar Resume.pdf" download class="resume-option">Data Visualization</a>
+    
+    <a href="resume/Mihirkumar Parmar QA Tester Resume.pdf" download class="resume-option">QA / Testing</a>
+    
+    <button class="close-modal" id="closeResumeModal">Cancel</button>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  // 1. THEME TOGGLE
+  // ============================================================
+  (function () {
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+    if (localStorage.getItem("theme") === "light") body.classList.add("light-theme");
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("light-theme");
+      localStorage.setItem("theme", body.classList.contains("light-theme") ? "light" : "dark");
+    });
+  })();
+
+  // ============================================================
+  // 2. HAMBURGER MENU
+  // ============================================================
+  (function () {
+    const btn = document.querySelector(".nav-toggle");
+    const body = document.body;
+    const navLinks = document.querySelectorAll(".main-nav a");
+
+    btn.addEventListener("click", () => {
+      const open = body.classList.toggle("nav-open");
+      btn.setAttribute("aria-expanded", open);
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 900) {
+          body.classList.remove("nav-open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && body.classList.contains("nav-open")) {
+        body.classList.remove("nav-open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+
+  // ============================================================
+  // 3. ROLE ROTATOR
+  // ============================================================
+  (function () {
+    const roles = [
+      "Full-Stack Web Developer",
+      "Cybersecurity Enthusiast",
+      "Desktop Application Developer",
+      "UI-Friendly Frontend Coder",
+      "Server-Side Backend Developer",
+      "C# .NET Specialist",
+      "UI/UX Designer"
+    ];
+    const roleSpan = document.querySelector(".role");
+    let index = 0;
+    function showRole() {
+      roleSpan.textContent = roles[index];
+      index = (index + 1) % roles.length;
+      setTimeout(showRole, 2600);
+    }
+    showRole();
+  })();
+
+  // ============================================================
+  // 4. SMOOTH SCROLL OFFSET
+  // ============================================================
+  (function () {
+    const header = document.querySelector('header');
+    const headerHeight = header ? header.offsetHeight : 80;
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').slice(1);
+        const targetEl = document.getElementById(targetId);
+        if (!targetEl) return;
+        e.preventDefault();
+        const rect = targetEl.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPos = rect.top + scrollTop - headerHeight - 12;
+        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+      });
+    });
+  })();
+
+  // ============================================================
+  // 5. ACTIVE NAV HIGHLIGHT ON SCROLL
+  // ============================================================
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".main-nav a");
+
+  function activateMenu() {
+    let current = "";
+    sections.forEach(sec => {
+      const top = window.scrollY;
+      const offset = sec.offsetTop - 150;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute("id");
+      if (top >= offset && top < offset + height) current = id;
+    });
+    navLinks.forEach(a => {
+      a.classList.remove("active");
+      if (a.getAttribute("href") === "#" + current) a.classList.add("active");
+    });
+  }
+  window.addEventListener("scroll", activateMenu);
+
+  // ============================================================
+  // 6. ★ NEW — DYNAMIC NAVBAR ON SCROLL
+  //    Adds/removes .scrolled class based on scroll position
+  // ============================================================
+  (function () {
+    const header = document.getElementById("main-header");
+    const SCROLL_THRESHOLD = 60; // px before style kicks in
+
+    function handleNavbarScroll() {
+      if (window.scrollY > SCROLL_THRESHOLD) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    }
+
+    window.addEventListener("scroll", handleNavbarScroll, { passive: true });
+    handleNavbarScroll(); // run once on load
+  })();
+
+  // ============================================================
+  // 7. RESUME MODAL
+  // ============================================================
+  const openBtn = document.getElementById("openResumeModal");
+  const modal = document.getElementById("resumeModal");
+  const closeBtn = document.getElementById("closeResumeModal");
+
+  openBtn.addEventListener("click", () => { modal.classList.add("show"); });
+  closeBtn.addEventListener("click", () => { modal.classList.remove("show"); });
+  modal.addEventListener("click", (e) => { if (e.target === modal) modal.classList.remove("show"); });
+
+  // ============================================================
+  // 8. SCROLL REVEAL ANIMATIONS
+  // ============================================================
+  (function () {
+    const reveals = document.querySelectorAll(".reveal");
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(reveal => revealObserver.observe(reveal));
+  })();
+
+  // ============================================================
+  // 9. ★ NEW — EMAILJS INIT + CONTACT FORM VALIDATION
+  // ============================================================
+  (function () {
+    // ----- EmailJS credentials -----
+    const EMAILJS_PUBLIC_KEY  = "jrZn_wyiVJTVHmDiD";
+    const EMAILJS_SERVICE_ID  = "service_w87zqh4";
+    const EMAILJS_TEMPLATE_ID = "template_oq1betn";
+
+    emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+
+    // ----- helpers -----
+    function getEl(id)  { return document.getElementById(id); }
+
+    function setError(errId, msg) {
+      const el = getEl(errId);
+      el.textContent = msg;
+      el.style.display = msg ? "block" : "none";
+    }
+
+    function clearErrors() {
+      ["err-name","err-email","err-subject","err-message"].forEach(id => setError(id, ""));
+      ["cf-name","cf-email","cf-subject","cf-message"].forEach(id => {
+        getEl(id).classList.remove("cf-invalid");
+      });
+    }
+
+    function markInvalid(inputId, errId, msg) {
+      getEl(inputId).classList.add("cf-invalid");
+      setError(errId, msg);
+    }
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+    }
+
+    function showToast(msg, type) {
+      const toast = getEl("cf-toast");
+      toast.textContent = msg;
+      toast.className = "cf-toast " + type;
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 5000);
+    }
+
+    // ----- form submission -----
+    const form      = getEl("contactForm");
+    const btnText   = getEl("cf-btn-text");
+    const btnLoader = getEl("cf-btn-loading");
+    const submitBtn = getEl("cf-submit");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      clearErrors();
+
+      const name    = getEl("cf-name").value.trim();
+      const email   = getEl("cf-email").value.trim();
+      const subject = getEl("cf-subject").value.trim();
+      const message = getEl("cf-message").value.trim();
+
+      let valid = true;
+
+      // Validation
+      if (!name) {
+        markInvalid("cf-name", "err-name", "⚠ Name is required.");
+        valid = false;
+      } else if (name.length < 2) {
+        markInvalid("cf-name", "err-name", "⚠ Name must be at least 2 characters.");
+        valid = false;
+      }
+
+      if (!email) {
+        markInvalid("cf-email", "err-email", "⚠ Email is required.");
+        valid = false;
+      } else if (!isValidEmail(email)) {
+        markInvalid("cf-email", "err-email", "⚠ Please enter a valid email address.");
+        valid = false;
+      }
+
+      if (!subject) {
+        markInvalid("cf-subject", "err-subject", "⚠ Subject is required.");
+        valid = false;
+      }
+
+      if (!message) {
+        markInvalid("cf-message", "err-message", "⚠ Message cannot be empty.");
+        valid = false;
+      } else if (message.length < 10) {
+        markInvalid("cf-message", "err-message", "⚠ Message must be at least 10 characters.");
+        valid = false;
+      }
+
+      if (!valid) return;
+
+      // Show loading state
+      btnText.style.display   = "none";
+      btnLoader.style.display = "inline";
+      submitBtn.disabled      = true;
+
+      const templateParams = {
+        from_name  : name,
+        from_email : email,
+        subject    : subject,
+        message    : message,
+        reply_to   : email
+      };
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          showToast("✅ Message sent successfully! I'll get back to you soon.", "cf-toast-success");
+          form.reset();
+        })
+        .catch((err) => {
+          console.error("EmailJS error:", err);
+          showToast("❌ Something went wrong. Please try again or email me directly.", "cf-toast-error");
+        })
+        .finally(() => {
+          btnText.style.display   = "inline";
+          btnLoader.style.display = "none";
+          submitBtn.disabled      = false;
+        });
+    });
+
+    // Live validation — clear error when user starts typing
+    ["cf-name","cf-email","cf-subject","cf-message"].forEach(id => {
+      getEl(id).addEventListener("input", function () {
+        this.classList.remove("cf-invalid");
+        const errId = "err-" + id.replace("cf-", "");
+        setError(errId, "");
+      });
+    });
+
+  })();
+</script>
+
+</body>
+</html>
